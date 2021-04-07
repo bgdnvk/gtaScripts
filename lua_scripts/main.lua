@@ -1,1 +1,0 @@
--- https://www.tutorialspoint.com/lua/lua_strings.htm
