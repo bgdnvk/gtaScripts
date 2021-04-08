@@ -72,3 +72,23 @@ for element in elementIterator(array)
 do
    print(element)
 end
+
+-- ipairs vs paris
+-- https://stackoverflow.com/questions/55108794/what-is-the-difference-of-pairs-vs-ipairs-in-lua
+-- > u={}
+-- > u[1]="a"
+-- > u[3]="b"
+-- > u[2]="c"
+-- > u[4]="d"
+-- > u["hello"]="world"
+-- > for key,value in ipairs(u) do print(key,value) end
+-- 1   a
+-- 2   c
+-- 3   b
+-- 4   d
+-- > for key,value in pairs(u) do print(key,value) end
+-- 1   a
+-- hello   world
+-- 3   b
+-- 2   c
+-- 4   d
